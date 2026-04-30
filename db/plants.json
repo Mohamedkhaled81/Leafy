@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "version": "1.0",
+    "totalPlants": 5,
+    "totalAdvice": 10,
+    "createdAt": "2026-04-28T12:00:00Z",
+    "updatedAt": "2026-04-28T12:00:00Z"
+  },
+  "plants": [
+    {
+      "id": "pl-001",
+      "slug": "monstera-deliciosa",
+      "name": "Monstera Deliciosa",
+      "category": "Indoor",
+      "price": {
+        "amount": 25.99,
+        "currency": "USD"
+      },
+      "stock": 15,
+      "rating": 4.7,
+      "image": "/prod1.jpg",
+      "description": "A popular indoor plant with large split leaves.",
+      "care": {
+        "light": "Indirect sunlight",
+        "water": "Once a week",
+        "temperature": "18-27°C"
+      }
+    },
+    {
+      "id": "pl-002",
+      "slug": "snake-plant",
+      "name": "Snake Plant",
+      "category": "Indoor",
+      "price": {
+        "amount": 18.5,
+        "currency": "USD"
+      },
+      "stock": 30,
+      "rating": 4.5,
+      "image": "/prod2.jpeg",
+      "description": "Low-maintenance plant that purifies air.",
+      "care": {
+        "light": "Low to bright light",
+        "water": "Every 2-3 weeks",
+        "temperature": "15-30°C"
+      }
+    },
+    {
+      "id": "pl-003",
+      "slug": "fiddle-leaf-fig",
+      "name": "Fiddle Leaf Fig",
+      "category": "Indoor",
+      "price": {
+        "amount": 40.0,
+        "currency": "USD"
+      },
+      "stock": 10,
+      "rating": 4.3,
+      "image": "/prod3.jpeg",
+      "description": "Tall plant with large violin-shaped leaves.",
+      "care": {
+        "light": "Bright indirect light",
+        "water": "Once a week",
+        "temperature": "18-24°C"
+      }
+    },
+    {
+      "id": "pl-004",
+      "slug": "aloe-vera",
+      "name": "Aloe Vera",
+      "category": "Succulent",
+      "price": {
+        "amount": 12.75,
+        "currency": "USD"
+      },
+      "stock": 50,
+      "rating": 4.8,
+      "image": "/prod4.jpeg",
+      "description": "Medicinal plant known for soothing gel.",
+      "care": {
+        "light": "Direct sunlight",
+        "water": "Every 2-3 weeks",
+        "temperature": "13-27°C"
+      }
+    },
+    {
+      "id": "pl-005",
+      "slug": "peace-lily",
+      "name": "Peace Lily",
+      "category": "Indoor",
+      "price": {
+        "amount": 22.0,
+        "currency": "USD"
+      },
+      "stock": 20,
+      "rating": 4.6,
+      "image": "/prod1.jpg",
+      "description": "Elegant plant with white blooms.",
+      "care": {
+        "light": "Low to medium light",
+        "water": "Once a week",
+        "temperature": "18-26°C"
+      }
+    },
+    {
+      "id": "pl-006",
+      "slug": "monstera-2",
+      "name": "Monstera Deluxe",
+      "category": "Indoor",
+      "price": {
+        "amount": 27.99,
+        "currency": "USD"
+      },
+      "stock": 12,
+      "rating": 4.6,
+      "image": "/prod2.jpeg",
+      "description": "Premium monstera with lush foliage.",
+      "care": {
+        "light": "Indirect sunlight",
+        "water": "Weekly",
+        "temperature": "20-28°C"
+      }
+    },
+    {
+      "id": "pl-007",
+      "slug": "snake-plant-2",
+      "name": "Snake Plant Mini",
+      "category": "Indoor",
+      "price": {
+        "amount": 15.5,
+        "currency": "USD"
+      },
+      "stock": 40,
+      "rating": 4.4,
+      "image": "/prod3.jpeg",
+      "description": "Compact snake plant for small spaces.",
+      "care": {
+        "light": "Low light",
+        "water": "Every 3 weeks",
+        "temperature": "16-30°C"
+      }
+    },
+    {
+      "id": "pl-008",
+      "slug": "aloe-vera-2",
+      "name": "Aloe Vera Large",
+      "category": "Succulent",
+      "price": {
+        "amount": 16.0,
+        "currency": "USD"
+      },
+      "stock": 35,
+      "rating": 4.7,
+      "image": "/prod4.jpeg",
+      "description": "Large aloe plant with extra gel.",
+      "care": {
+        "light": "Direct sunlight",
+        "water": "Bi-weekly",
+        "temperature": "15-28°C"
+      }
+    },
+    {
+      "id": "pl-009",
+      "slug": "peace-lily-2",
+      "name": "Peace Lily Premium",
+      "category": "Indoor",
+      "price": {
+        "amount": 26.0,
+        "currency": "USD"
+      },
+      "stock": 18,
+      "rating": 4.6,
+      "image": "/prod1.jpg",
+      "description": "Premium flowering indoor plant.",
+      "care": {
+        "light": "Medium light",
+        "water": "Weekly",
+        "temperature": "18-26°C"
+      }
+    },
+    {
+      "id": "pl-010",
+      "slug": "fiddle-leaf-2",
+      "name": "Fiddle Leaf Mini",
+      "category": "Indoor",
+      "price": {
+        "amount": 35.0,
+        "currency": "USD"
+      },
+      "stock": 14,
+      "rating": 4.2,
+      "image": "/prod2.jpeg",
+      "description": "Smaller version of the classic fig.",
+      "care": {
+        "light": "Bright indirect",
+        "water": "Weekly",
+        "temperature": "18-24°C"
+      }
+    }
+  ],
+  "plantingAdvice": [
+    {
+      "id": "adv-001",
+      "title": "Provide Proper Light",
+      "category": "Light",
+      "difficulty": "Beginner",
+      "frequency": "Daily",
+      "description": "Most indoor plants thrive in bright indirect light.",
+      "tips": [
+        "Rotate plants weekly",
+        "Use sheer curtains"
+      ],
+      "relatedCategories": [
+        "Indoor"
+      ],
+      "createdAt": "2026-04-28T12:00:00Z"
+    },
+    {
+      "id": "adv-002",
+      "title": "Avoid Overwatering",
+      "category": "Watering",
+      "difficulty": "Beginner",
+      "frequency": "Weekly",
+      "description": "Water only when soil is dry on top 2–3 cm.",
+      "tips": [
+        "Use finger test",
+        "Empty drainage tray"
+      ],
+      "relatedCategories": [
+        "Succulent",
+        "Indoor"
+      ],
+      "createdAt": "2026-04-28T12:00:00Z"
+    },
+    {
+      "id": "adv-003",
+      "title": "Use Well-Draining Soil",
+      "category": "Soil",
+      "difficulty": "Beginner",
+      "frequency": "Setup",
+      "description": "Prevents root rot by allowing proper drainage.",
+      "tips": [
+        "Add perlite",
+        "Avoid compact soil"
+      ],
+      "relatedCategories": [
+        "All"
+      ],
+      "createdAt": "2026-04-28T12:00:00Z"
+    }
+  ]
+}
