@@ -13,8 +13,9 @@ export default function NavBar() {
         <ul className="hidden md:flex gap-8 text-gray-300 text-xl">
           <li className="hover:text-gray-400 transition"><Link href="/">Home</Link></li>
           <li className="hover:text-gray-400 transition"><Link href="/plants">Plants</Link></li>
-          <li className="hover:text-gray-400 transition"><Link href="/advices">Advices</Link></li>
+          <li className="hover:text-gray-400 transition"><Link href="/posts">Posts</Link></li>
           <li className="hover:text-gray-400 transition"><Link href="/about">About</Link></li>
+          <li className="hover:text-gray-400 transition"><Link href="/profile">Profile</Link></li>
         </ul>
       </div>
     </nav>

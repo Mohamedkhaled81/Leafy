@@ -19,9 +19,6 @@ export default function PlantCard({ plant }) {
 
       <div className="p-5 flex flex-col items-center gap-2 ">
         <p className="text-2xl text-gray-300">{plant.name}</p>
-        <span className="text-green-400 text-lg font-semibold">
-          ${plant.price.amount}
-        </span>
       </div>
     </Link>
   );

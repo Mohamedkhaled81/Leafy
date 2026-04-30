@@ -1,252 +1,139 @@
 {
   "meta": {
-    "version": "1.0",
-    "totalPlants": 5,
-    "totalAdvice": 10,
-    "createdAt": "2026-04-28T12:00:00Z",
-    "updatedAt": "2026-04-28T12:00:00Z"
+    "version": "1.0"
   },
   "plants": [
     {
       "id": "pl-001",
-      "slug": "monstera-deliciosa",
       "name": "Monstera Deliciosa",
+      "scientificName": "Monstera deliciosa",
       "category": "Indoor",
-      "price": {
-        "amount": 25.99,
-        "currency": "USD"
+      "origin": "Central America",
+      "image": "/prod2.jpeg",
+      "description": "A tropical plant known for its large split leaves.",
+      "characteristics": {
+        "leafShape": "Split leaves",
+        "growthType": "Climber",
+        "size": "2-3m indoors"
       },
-      "stock": 15,
-      "rating": 4.7,
-      "image": "/prod1.jpg",
-      "description": "A popular indoor plant with large split leaves.",
       "care": {
-        "light": "Indirect sunlight",
-        "water": "Once a week",
-        "temperature": "18-27°C"
+        "light": "Bright indirect",
+        "water": "When soil is dry",
+        "temperature": "18-27°C",
+        "humidity": "High"
       }
     },
     {
       "id": "pl-002",
-      "slug": "snake-plant",
       "name": "Snake Plant",
+      "scientificName": "Sansevieria trifasciata",
       "category": "Indoor",
-      "price": {
-        "amount": 18.5,
-        "currency": "USD"
+      "origin": "West Africa",
+      "image": "/prod3.jpeg",
+      "description": "A hardy, low-maintenance plant with upright leaves.",
+      "characteristics": {
+        "leafShape": "Sword-like",
+        "growthType": "Succulent-like",
+        "size": "Up to 1m"
       },
-      "stock": 30,
-      "rating": 4.5,
-      "image": "/prod2.jpeg",
-      "description": "Low-maintenance plant that purifies air.",
       "care": {
-        "light": "Low to bright light",
-        "water": "Every 2-3 weeks",
-        "temperature": "15-30°C"
+        "light": "Low to bright",
+        "water": "Rarely",
+        "temperature": "15-30°C",
+        "humidity": "Low"
       }
     },
     {
       "id": "pl-003",
-      "slug": "fiddle-leaf-fig",
       "name": "Fiddle Leaf Fig",
+      "scientificName": "Ficus lyrata",
       "category": "Indoor",
-      "price": {
-        "amount": 40.0,
-        "currency": "USD"
-      },
-      "stock": 10,
-      "rating": 4.3,
-      "image": "/prod3.jpeg",
+      "origin": "West Africa",
+      "image": "/prod4.jpeg",
       "description": "Tall plant with large violin-shaped leaves.",
+      "characteristics": {
+        "leafShape": "Violin-shaped",
+        "growthType": "Tree-like",
+        "size": "Up to 2m"
+      },
       "care": {
-        "light": "Bright indirect light",
-        "water": "Once a week",
-        "temperature": "18-24°C"
+        "light": "Bright indirect",
+        "water": "Weekly",
+        "temperature": "18-24°C",
+        "humidity": "Moderate"
       }
     },
     {
       "id": "pl-004",
-      "slug": "aloe-vera",
       "name": "Aloe Vera",
+      "scientificName": "Aloe barbadensis miller",
       "category": "Succulent",
-      "price": {
-        "amount": 12.75,
-        "currency": "USD"
+      "origin": "Arabian Peninsula",
+      "image": "/prod2.jpeg",
+      "description": "Succulent plant known for its soothing gel.",
+      "characteristics": {
+        "leafShape": "Thick pointed",
+        "growthType": "Succulent",
+        "size": "30-60cm"
       },
-      "stock": 50,
-      "rating": 4.8,
-      "image": "/prod4.jpeg",
-      "description": "Medicinal plant known for soothing gel.",
       "care": {
-        "light": "Direct sunlight",
-        "water": "Every 2-3 weeks",
-        "temperature": "13-27°C"
+        "light": "Direct sun",
+        "water": "Low",
+        "temperature": "13-27°C",
+        "humidity": "Low"
       }
     },
     {
       "id": "pl-005",
-      "slug": "peace-lily",
       "name": "Peace Lily",
+      "scientificName": "Spathiphyllum",
       "category": "Indoor",
-      "price": {
-        "amount": 22.0,
-        "currency": "USD"
-      },
-      "stock": 20,
-      "rating": 4.6,
-      "image": "/prod1.jpg",
-      "description": "Elegant plant with white blooms.",
-      "care": {
-        "light": "Low to medium light",
-        "water": "Once a week",
-        "temperature": "18-26°C"
-      }
-    },
-    {
-      "id": "pl-006",
-      "slug": "monstera-2",
-      "name": "Monstera Deluxe",
-      "category": "Indoor",
-      "price": {
-        "amount": 27.99,
-        "currency": "USD"
-      },
-      "stock": 12,
-      "rating": 4.6,
-      "image": "/prod2.jpeg",
-      "description": "Premium monstera with lush foliage.",
-      "care": {
-        "light": "Indirect sunlight",
-        "water": "Weekly",
-        "temperature": "20-28°C"
-      }
-    },
-    {
-      "id": "pl-007",
-      "slug": "snake-plant-2",
-      "name": "Snake Plant Mini",
-      "category": "Indoor",
-      "price": {
-        "amount": 15.5,
-        "currency": "USD"
-      },
-      "stock": 40,
-      "rating": 4.4,
+      "origin": "Tropical Americas",
       "image": "/prod3.jpeg",
-      "description": "Compact snake plant for small spaces.",
-      "care": {
-        "light": "Low light",
-        "water": "Every 3 weeks",
-        "temperature": "16-30°C"
-      }
-    },
-    {
-      "id": "pl-008",
-      "slug": "aloe-vera-2",
-      "name": "Aloe Vera Large",
-      "category": "Succulent",
-      "price": {
-        "amount": 16.0,
-        "currency": "USD"
+      "description": "Elegant plant with white flowers.",
+      "characteristics": {
+        "leafShape": "Broad glossy",
+        "growthType": "Clumping",
+        "size": "30-90cm"
       },
-      "stock": 35,
-      "rating": 4.7,
-      "image": "/prod4.jpeg",
-      "description": "Large aloe plant with extra gel.",
       "care": {
-        "light": "Direct sunlight",
-        "water": "Bi-weekly",
-        "temperature": "15-28°C"
-      }
-    },
-    {
-      "id": "pl-009",
-      "slug": "peace-lily-2",
-      "name": "Peace Lily Premium",
-      "category": "Indoor",
-      "price": {
-        "amount": 26.0,
-        "currency": "USD"
-      },
-      "stock": 18,
-      "rating": 4.6,
-      "image": "/prod1.jpg",
-      "description": "Premium flowering indoor plant.",
-      "care": {
-        "light": "Medium light",
-        "water": "Weekly",
-        "temperature": "18-26°C"
-      }
-    },
-    {
-      "id": "pl-010",
-      "slug": "fiddle-leaf-2",
-      "name": "Fiddle Leaf Mini",
-      "category": "Indoor",
-      "price": {
-        "amount": 35.0,
-        "currency": "USD"
-      },
-      "stock": 14,
-      "rating": 4.2,
-      "image": "/prod2.jpeg",
-      "description": "Smaller version of the classic fig.",
-      "care": {
-        "light": "Bright indirect",
-        "water": "Weekly",
-        "temperature": "18-24°C"
+        "light": "Low-medium",
+        "water": "Keep moist",
+        "temperature": "18-26°C",
+        "humidity": "High"
       }
     }
   ],
-  "plantingAdvice": [
+  "posts": [
     {
-      "id": "adv-001",
-      "title": "Provide Proper Light",
-      "category": "Light",
-      "difficulty": "Beginner",
-      "frequency": "Daily",
-      "description": "Most indoor plants thrive in bright indirect light.",
-      "tips": [
-        "Rotate plants weekly",
-        "Use sheer curtains"
-      ],
-      "relatedCategories": [
-        "Indoor"
-      ],
-      "createdAt": "2026-04-28T12:00:00Z"
+      "id": "post-001",
+      "title": "How to Give Your Plants the Right Light",
+      "slug": "proper-light-for-plants",
+      "image": "/prod2.jpeg",
+      "excerpt": "Light plays a key role in plant growth. Most indoor plants prefer indirect sunlight.",
+      "content": "Most indoor plants thrive in bright, indirect light. Direct sunlight can burn leaves, while too little light slows growth. Place your plant near a window with filtered light and rotate it regularly to ensure even growth.",
+      "tags": ["light", "indoor"],
+      "createdAt": "2026-04-30"
     },
     {
-      "id": "adv-002",
-      "title": "Avoid Overwatering",
-      "category": "Watering",
-      "difficulty": "Beginner",
-      "frequency": "Weekly",
-      "description": "Water only when soil is dry on top 2–3 cm.",
-      "tips": [
-        "Use finger test",
-        "Empty drainage tray"
-      ],
-      "relatedCategories": [
-        "Succulent",
-        "Indoor"
-      ],
-      "createdAt": "2026-04-28T12:00:00Z"
+      "id": "post-002",
+      "title": "Stop Overwatering Your Plants",
+      "slug": "avoid-overwatering",
+      "image": "/prod3.jpeg",
+      "excerpt": "Overwatering is one of the most common mistakes plant owners make.",
+      "content": "Water your plants only when the top layer of soil is dry. Overwatering can lead to root rot and plant death. Always check the soil before watering and ensure your pot has proper drainage.",
+      "tags": ["watering", "beginner"],
+      "createdAt": "2026-04-30"
     },
     {
-      "id": "adv-003",
-      "title": "Use Well-Draining Soil",
-      "category": "Soil",
-      "difficulty": "Beginner",
-      "frequency": "Setup",
-      "description": "Prevents root rot by allowing proper drainage.",
-      "tips": [
-        "Add perlite",
-        "Avoid compact soil"
-      ],
-      "relatedCategories": [
-        "All"
-      ],
-      "createdAt": "2026-04-28T12:00:00Z"
+      "id": "post-003",
+      "title": "Choosing the Right Soil for Your Plants",
+      "slug": "best-soil-for-plants",
+      "image": "/prod4.jpeg",
+      "excerpt": "Soil quality directly affects plant health and growth.",
+      "content": "Using well-draining soil is essential for healthy plants. A good mix allows air and water to flow properly, preventing root rot. Adding materials like perlite can improve drainage and aeration.",
+      "tags": ["soil", "care"],
+      "createdAt": "2026-04-30"
     }
   ]
 }
