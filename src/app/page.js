@@ -18,7 +18,7 @@ export default function Home() {
           </div>
           <div className="flex gap-6 items-baseline">
             <Link className="text-green-400 " href="/plants">Show me plants!</Link>
-            <Link className="border-2 border-green-400 text-green-400 px-5 py-2 rounded-xl " href="/about">Know About Us</Link>
+            <Link className="border-2 border-green-400 text-green-400 px-5 py-2 rounded-xl hover:bg-green-400 hover:text-black transition " href="/about">Know About Us</Link>
           </div>
         </div>
       </header>
