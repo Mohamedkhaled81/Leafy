@@ -1,14 +1,21 @@
 import { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 const getPlantDetail = async (plntId) => {
   const response = await fetch(`http://localhost:3000/plants/${plntId}`);
+
+  if(!response.ok) {
+    return null;
+  }
   return response.json();
 };
 
 const Plant = async ({ plntId }) => {
   const plant = await getPlantDetail(plntId);
+  console.log(plant)
+  if(!(plant)) {notFound()}
   return (
     <div className="text-gray-300 max-w-7xl mx-auto px-4 mt-10">
       <div className="flex flex-col gap-8">
