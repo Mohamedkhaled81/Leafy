@@ -102,6 +102,86 @@
         "temperature": "18-26°C",
         "humidity": "High"
       }
+    },
+    {
+      "name": "Rubber Plant",
+      "scientificName": "Ficus elastica",
+      "category": "Indoor",
+      "origin": "Southeast Asia",
+      "description": "A popular indoor plant with large glossy leaves.",
+      "characteristics": {
+        "leafShape": "Broad oval",
+        "growthType": "Tree-like",
+        "size": "1-2m indoor"
+      },
+      "care": {
+        "light": "Bright indirect",
+        "water": "When top soil dries",
+        "temperature": "18-26°C",
+        "humidity": "Moderate"
+      },
+      "image": "/uploads/1777721911864-UXlNPQ",
+      "id": "Tax_vMFFRv0"
+    },
+    {
+      "name": "Chinese Money Plant",
+      "scientificName": "Pilea peperomioides",
+      "category": "Indoor",
+      "origin": "China",
+      "description": "A charming plant with round coin-shaped leaves, popular for its unique look.",
+      "characteristics": {
+        "leafShape": "Round",
+        "growthType": "Upright",
+        "size": "0.3-0.5m"
+      },
+      "care": {
+        "light": "Bright indirect",
+        "water": "When top soil dries",
+        "temperature": "15-25°C",
+        "humidity": "Moderate"
+      },
+      "image": "/uploads/1777722526014-Chinese_Money_Plant_6in_Charlie_S_Dark_hanging.webp",
+      "id": "SUgYllof-eY"
+    },
+    {
+      "name": "11",
+      "scientificName": "111",
+      "category": "sabar",
+      "origin": "Egypt",
+      "description": "jlkjlkjlkjlkjk",
+      "characteristics": {
+        "leafShape": "NONOE",
+        "growthType": "111",
+        "size": "1-2m indoor"
+      },
+      "care": {
+        "light": "Bright indirect",
+        "water": "When top soil dries",
+        "temperature": "15-25°C",
+        "humidity": "ytryry"
+      },
+      "image": "/uploads/1777746543292-Chinese_Money_Plant_6in_Charlie_S_Dark_hanging.webp",
+      "id": "oa_wbiiJFeU"
+    },
+    {
+      "name": "Mohamed Khaled",
+      "scientificName": "nabta science",
+      "category": "Indoor",
+      "origin": "Egypt",
+      "description": "asdfasdflakjshdhfskjlghajkhlkgfhalkdhgkjahdlkhgksdhfklghjskdlhfgkhlsdfhjklg",
+      "characteristics": {
+        "leafShape": "111",
+        "growthType": "GREATE",
+        "size": "111"
+      },
+      "care": {
+        "light": "ad",
+        "water": "When top soil dries",
+        "temperature": "sadf",
+        "humidity": "ytryry"
+      },
+      "image": "/uploads/1777748422676-Screenshot from 2025-12-03 16-40-10.png",
+      "id": "ucpKQgRKnFM"
     }
   ],
   "posts": [
@@ -112,7 +192,10 @@
       "image": "/prod2.jpeg",
       "excerpt": "Light plays a key role in plant growth. Most indoor plants prefer indirect sunlight.",
       "content": "Most indoor plants thrive in bright, indirect light. Direct sunlight can burn leaves, while too little light slows growth. Place your plant near a window with filtered light and rotate it regularly to ensure even growth.",
-      "tags": ["light", "indoor"],
+      "tags": [
+        "light",
+        "indoor"
+      ],
       "createdAt": "2026-04-30"
     },
     {
@@ -122,7 +205,10 @@
       "image": "/prod3.jpeg",
       "excerpt": "Overwatering is one of the most common mistakes plant owners make.",
       "content": "Water your plants only when the top layer of soil is dry. Overwatering can lead to root rot and plant death. Always check the soil before watering and ensure your pot has proper drainage.",
-      "tags": ["watering", "beginner"],
+      "tags": [
+        "watering",
+        "beginner"
+      ],
       "createdAt": "2026-04-30"
     },
     {
@@ -132,8 +218,12 @@
       "image": "/prod4.jpeg",
       "excerpt": "Soil quality directly affects plant health and growth.",
       "content": "Using well-draining soil is essential for healthy plants. A good mix allows air and water to flow properly, preventing root rot. Adding materials like perlite can improve drainage and aeration.",
-      "tags": ["soil", "care"],
+      "tags": [
+        "soil",
+        "care"
+      ],
       "createdAt": "2026-04-30"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
