@@ -20,11 +20,11 @@ const Plant = async ({ plantId }) => {
     <div className="text-gray-300 max-w-7xl mx-auto px-4 mt-10">
       <div className="flex flex-col gap-8">
         <div className="flex  justify-between items-center gap-4">
-          <h2 className="text-3xl font-semibold">Modify plant's data</h2>
+          <h2 className="text-4xl font-semibold">Modify plant's data</h2>
           <div className="flex gap-5">
             <Link
                 href={`/plants/${plantId}/edit`}
-                className="self-start font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
+                className="self-start text-xl font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
             >
                 Edit
             </Link>

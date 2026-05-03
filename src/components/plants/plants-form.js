@@ -41,7 +41,7 @@ export default function PlantsForm(props) {
           </h1>
           <Link
             href={addFlag ? "/plants" : `/plants/${plantsData?.id}`}
-            className="self-start font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
+            className="self-start  font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
           >
             Back
           </Link>

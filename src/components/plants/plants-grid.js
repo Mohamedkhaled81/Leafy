@@ -24,12 +24,12 @@ export default async function PlantsGrid() {
       <div className="text-gray-300 max-w-7xl mx-auto px-4 mt-10">
         <div className="flex flex-col gap-8">
           <div className="flex  justify-between items-center gap-4">
-            <h2 className="text-3xl font-semibold">
+            <h2 className="text-4xl font-semibold">
               Add a plant to your shelf
             </h2>
             <Link
               href="/plants/add"
-              className="self-start font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
+              className="self-start text-xl font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
             >
               +
             </Link>
