@@ -2,9 +2,10 @@ import { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import DeletePlant from "@/components/plants/delete-plant";
 
-const getPlantDetail = async (plntId) => {
-  const response = await fetch(`http://localhost:3000/plants/${plntId}`);
+const getPlantDetail = async (plantId) => {
+  const response = await fetch(`http://localhost:3000/plants/${plantId}`);
 
   if(!response.ok) {
     return null;
@@ -27,12 +28,7 @@ const Plant = async ({ plantId }) => {
             >
                 Edit
             </Link>
-            <Link
-                href="/plants/add"
-                className="self-start font-semibold sm:self-auto rounded-full px-5 py-2 text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-black transition cursor-pointer"
-            >
-                -
-            </Link>
+            <DeletePlant plantId={plantId}></DeletePlant>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-10 md:divide-x md:divide-gray-700 ">
