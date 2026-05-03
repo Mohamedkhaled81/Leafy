@@ -32,7 +32,7 @@ export default function PlantsForm(props) {
   return (
     <div className="text-gray-300 max-w-7xl mx-auto px-4 mt-10 mb-10">
       <form
-        className="flex flex-col text-xl gap-8 mx-auto "
+        className="flex flex-col text-xl gap-10 mx-auto "
         action={formAction}
       >
         <div className="flex flex-row justify-between ">
