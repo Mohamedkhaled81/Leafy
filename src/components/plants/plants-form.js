@@ -30,7 +30,7 @@ export default function PlantsForm(props) {
     };
   }
   return (
-    <div className="text-gray-300 max-w-7xl mx-auto px-4 mt-10">
+    <div className="text-gray-300 max-w-7xl mx-auto px-4 mt-10 mb-10">
       <form
         className="flex flex-col text-xl gap-8 mx-auto "
         action={formAction}
