@@ -13,7 +13,6 @@ export async function GET(request, {params}) {
       .collection("plants")
       .findOne({_id: new ObjectId(plantId)});
     
-    console.log(plant);
     return NextResponse.json(plant);
   } catch (error) {
     return NextResponse.json(

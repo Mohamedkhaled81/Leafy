@@ -4,6 +4,9 @@ import fs from "fs/promises";
 import { redirect } from "next/navigation";
 import plantSchema from "@/schema/plantSchema";
 import { revalidatePath } from "next/cache";
+import { NextResponse } from "next/server";
+import clientPromise from "@/lib/mongodb";
+import { ObjectId } from "mongodb";
 
 function retrieveRawData(formData) {
   const rawPlant = {
@@ -67,37 +70,36 @@ function validatePlant(plantRaw, requireImage = true) {
 }
 
 export async function addPlant(prevState, formData) {
-  const rawPlant = retrieveRawData(formData);
-  const result = validatePlant(rawPlant, true);
+  try {
+    const rawPlant = retrieveRawData(formData);
+    const result = validatePlant(rawPlant, true);
 
     if (!result.success) {
-    return { errors: result.errors };
-  }
+      return { errors: result.errors };
+    }
 
-  const validPlant = result.data;
-  const file = validPlant.image;
+    const validPlant = result.data;
+    const file = validPlant.image;
 
-  const buffer = await file.arrayBuffer();
-  const fileName = `${Date.now()}-${file.name}`;
-  await fs.writeFile(`public/uploads/${fileName}`, Buffer.from(buffer));
-  validPlant.image = `/uploads/${fileName}`;
+    const buffer = await file.arrayBuffer();
+    const fileName = `${Date.now()}-${file.name}`;
 
-  const response = await fetch("http://localhost:3000/plants/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(validPlant),
-  });
+    await fs.writeFile(`public/uploads/${fileName}`, Buffer.from(buffer));
 
-  if (!response.ok) {
+    validPlant.image = `/uploads/${fileName}`;
+
+    const client = await clientPromise;
+    const db = client.db("plantsDb");
+
+    await db.collection("plants").insertOne(validPlant);
+
+  } catch (error) {
     return {
       errors: {
-        submit: [`Failed to add plant: ${response.statusText}`],
+        submit: ["Failed to add plant" + error],
       },
     };
   }
-
   revalidatePath("/plants");
   redirect("/plants");
 }
