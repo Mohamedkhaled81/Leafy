@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function PlantCard({ plant }) {
   return (
     <Link
-      href={`/plants/${plant.id}`}
+      href={`/plants/${plant._id}`}
       className="w-72 cursor-pointer rounded-2xl overflow-hidden border group border-mist-800 bg-mist-900"
     >
       <div className="relative w-full h-64 overflow-hidden ">
