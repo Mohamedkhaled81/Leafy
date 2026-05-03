@@ -24,26 +24,6 @@
       }
     },
     {
-      "id": "pl-002",
-      "name": "Snake Plant",
-      "scientificName": "Sansevieria trifasciata",
-      "category": "Indoor",
-      "origin": "West Africa",
-      "image": "/prod3.jpeg",
-      "description": "A hardy, low-maintenance plant with upright leaves.",
-      "characteristics": {
-        "leafShape": "Sword-like",
-        "growthType": "Succulent-like",
-        "size": "Up to 1m"
-      },
-      "care": {
-        "light": "Low to bright",
-        "water": "Rarely",
-        "temperature": "15-30°C",
-        "humidity": "Low"
-      }
-    },
-    {
       "name": "Fiddle Leaf Fig",
       "scientificName": "Ficus lyrata",
       "category": "Indoor",
@@ -162,6 +142,26 @@
       },
       "image": "/uploads/1777766574160-prod2.jpeg",
       "id": "AGlKY1wj4ic"
+    },
+    {
+      "name": "11mk",
+      "scientificName": "11",
+      "category": "111",
+      "origin": "111",
+      "description": "ajslkfdjalsdhfkjhadjfhkjashlkfdjhjkalshdfjklasd1",
+      "characteristics": {
+        "leafShape": "11",
+        "growthType": "11",
+        "size": "11"
+      },
+      "care": {
+        "light": "11",
+        "water": "11",
+        "temperature": "11",
+        "humidity": "11"
+      },
+      "image": "/uploads/1777813090867-prod4.jpeg",
+      "id": "S9eQa7WHezM"
     }
   ],
   "posts": [

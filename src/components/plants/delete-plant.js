@@ -27,7 +27,7 @@ export default function DeletePlant({ plantId }) {
   return (
     <button
       onClick={handleDelete}
-      className="self-start font-semibold sm:self-auto rounded-full px-5 py-2 text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-black transition cursor-pointer"
+      className="self-start text-xl font-semibold sm:self-auto rounded-full px-5 py-2 text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-black transition cursor-pointer"
     >
       -
     </button>
