@@ -1,21 +1,18 @@
 import PlantsForm from "@/components/plants/plants-form";
 
-const getPlantDetail = async (plantId) => {
-  const response = await fetch(`http://localhost:3000/plants/${plantId}`);
-
-  if(!response.ok) {
-    return null;
-  }
-  return response.json();
-};
-
-
 export default async function EditPlant({ params }) {
   const { plantId } = await params;
-  const plantDetails = await getPlantDetail(plantId);
+  let plantDetails = null;
+  try {
+    const response = await fetch(`http://localhost:3000/api/plants/${plantId}`);
+    if (response.ok) {
+      plantDetails = await response.json();
+    }
+  } catch (error) {
+    console.error("Fetch error:", error);
+  }
+
   plantDetails ?? notFound();
 
-  return (
-    <PlantsForm addFlag={false} plantsData={ plantDetails }></PlantsForm>
-  )
+  return <PlantsForm addFlag={false} plantsData={plantDetails}></PlantsForm>;
 }

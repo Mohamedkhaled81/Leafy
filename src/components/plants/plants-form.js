@@ -8,7 +8,7 @@ import { useActionState } from "react";
 export default function PlantsForm(props) {
   const {addFlag, plantsData} = props;
   const [pickedImg, setPickedImg] = useState(null);
-  const newUpdatePlant = updatePlant.bind(null, plantsData?.id);
+  const newUpdatePlant = updatePlant.bind(null, plantsData?._id);
   const actionFn = addFlag ? addPlant : newUpdatePlant;
   const [state, formAction, pending] = useActionState(actionFn, {
     errors: null,
@@ -40,7 +40,7 @@ export default function PlantsForm(props) {
             {addFlag ? (<>Add a new plant <span className="text-green-400">+</span></>) : <>Edit the plant's data <span className="text-green-400">*</span></>} 
           </h1>
           <Link
-            href={addFlag ? "/plants" : `/plants/${plantsData?.id}`}
+            href={addFlag ? "/plants" : `/plants/${plantsData?._id}`}
             className="self-start  font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
           >
             Back

@@ -4,7 +4,6 @@ import fs from "fs/promises";
 import { redirect } from "next/navigation";
 import plantSchema from "@/schema/plantSchema";
 import { revalidatePath } from "next/cache";
-import { NextResponse } from "next/server";
 import clientPromise from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 
@@ -92,7 +91,6 @@ export async function addPlant(prevState, formData) {
     const db = client.db("plantsDb");
 
     await db.collection("plants").insertOne(validPlant);
-
   } catch (error) {
     return {
       errors: {
@@ -105,43 +103,68 @@ export async function addPlant(prevState, formData) {
 }
 
 export async function updatePlant(plantId, prevState, formData) {
-  const rawPlant = retrieveRawData(formData);
-  const result = validatePlant(rawPlant, false);
-  if (!result.success) {
-    return { errors: result.errors };
-  }
+  try {
+    const rawPlant = retrieveRawData(formData);
+    const result = validatePlant(rawPlant, false);
 
-  const validPlant = result.data;
+    if (!result.success) {
+      return { errors: result.errors };
+    }
 
-  const file = validPlant.image;
+    const validPlant = result.data;
+    const file = validPlant.image;
 
-  if (file && file.size > 0) {
-    const buffer = await file.arrayBuffer();
-    const fileName = `${Date.now()}-${file.name}`;
-    await fs.writeFile(`public/uploads/${fileName}`, Buffer.from(buffer));
+    if (file && file.size > 0) {
+      const buffer = await file.arrayBuffer();
+      const fileName = `${Date.now()}-${file.name}`;
 
-    validPlant.image = `/uploads/${fileName}`;
-  } else {
-    delete validPlant.image;
-  }
+      await fs.writeFile(`public/uploads/${fileName}`, Buffer.from(buffer));
 
-  const response = await fetch(`http://localhost:3000/plants/${plantId}`, {
-    method: "PATCH",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(validPlant),
-  });
+      validPlant.image = `/uploads/${fileName}`;
+    } else {
+      delete validPlant.image;
+    }
 
-  if (!response.ok) {
+    const client = await clientPromise;
+    const db = client.db("plantsDb");
+
+    await db.collection("plants").updateOne(
+      { _id: new ObjectId(plantId) },
+      {
+        $set: validPlant,
+      },
+    );
+  } catch (error) {
     return {
       errors: {
-        submit: [`Failed to update plant: ${response.statusText}`],
+        submit: ["Failed to update plant: " + error.message],
       },
     };
   }
-
   revalidatePath("/plants");
   revalidatePath(`/plants/${plantId}`);
   redirect(`/plants/${plantId}`);
+}
+
+
+export async function deletePlant(plantId) {
+  try {
+    if (!ObjectId.isValid(plantId)) {
+      return { error: "Invalid plant id" };
+    }
+
+    const client = await clientPromise;
+    const db = client.db("plantsDb");
+
+    await db.collection("plants").deleteOne({
+      _id: new ObjectId(plantId),
+    });
+
+  } catch (error) {
+    return {
+      error: "Failed to delete plant: " + error.message,
+    };
+  }
+  revalidatePath("/plants");
+  redirect("/plants");
 }
