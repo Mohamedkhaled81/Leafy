@@ -44,12 +44,10 @@
       }
     },
     {
-      "id": "pl-003",
       "name": "Fiddle Leaf Fig",
       "scientificName": "Ficus lyrata",
       "category": "Indoor",
       "origin": "West Africa",
-      "image": "/prod4.jpeg",
       "description": "Tall plant with large violin-shaped leaves.",
       "characteristics": {
         "leafShape": "Violin-shaped",
@@ -61,7 +59,9 @@
         "water": "Weekly",
         "temperature": "18-24°C",
         "humidity": "Moderate"
-      }
+      },
+      "image": "/uploads/1777764051634-prod3.jpeg",
+      "id": "pl-003"
     },
     {
       "id": "pl-004",
@@ -144,7 +144,7 @@
       "id": "SUgYllof-eY"
     },
     {
-      "name": "11",
+      "name": "113",
       "scientificName": "111",
       "category": "sabar",
       "origin": "Egypt",
@@ -164,7 +164,7 @@
       "id": "oa_wbiiJFeU"
     },
     {
-      "name": "Mohamed Khaled",
+      "name": "Mohamed Khaled King",
       "scientificName": "nabta science",
       "category": "Indoor",
       "origin": "Egypt",
@@ -180,8 +180,68 @@
         "temperature": "sadf",
         "humidity": "ytryry"
       },
-      "image": "/uploads/1777748422676-Screenshot from 2025-12-03 16-40-10.png",
+      "image": "/uploads/1777764820442-p3.jpeg",
       "id": "ucpKQgRKnFM"
+    },
+    {
+      "name": "Mohamed Khaled",
+      "scientificName": "nabta science",
+      "category": "11",
+      "origin": "Egypt",
+      "description": "safasdfasdfasdf",
+      "characteristics": {
+        "leafShape": "Broad oval",
+        "growthType": "GREATE",
+        "size": "1-2m indoor"
+      },
+      "care": {
+        "light": "Bright indirect",
+        "water": "When top soil dries",
+        "temperature": "18-26°C",
+        "humidity": "alot"
+      },
+      "image": "/uploads/1777765740210-prod2.jpeg",
+      "id": "cACw8bN_buc"
+    },
+    {
+      "name": "Mohamed KKKK",
+      "scientificName": "Ficus lyrata",
+      "category": "sabar WTF",
+      "origin": "Egypt",
+      "description": "asdfasdfasdfasdfasdfasdf",
+      "characteristics": {
+        "leafShape": "Broad oval",
+        "growthType": "Upright",
+        "size": "large"
+      },
+      "care": {
+        "light": "Bright indirect",
+        "water": "When top soil dries",
+        "temperature": "18-24°C",
+        "humidity": "Moderate"
+      },
+      "image": "/uploads/1777765845519-prod4.jpeg",
+      "id": "mke8koooh9Q"
+    },
+    {
+      "name": "Omar1",
+      "scientificName": "Ezzat",
+      "category": "Omar",
+      "origin": "Egypt",
+      "description": "sakldjlsadj;ljaf",
+      "characteristics": {
+        "leafShape": "Round",
+        "growthType": "Upright",
+        "size": "Up to 2m"
+      },
+      "care": {
+        "light": "alot",
+        "water": "Weekly",
+        "temperature": "18-26°C",
+        "humidity": "ytryry"
+      },
+      "image": "/uploads/1777766574160-prod2.jpeg",
+      "id": "AGlKY1wj4ic"
     }
   ],
   "posts": [

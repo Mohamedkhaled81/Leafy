@@ -12,9 +12,8 @@ const getPlantDetail = async (plntId) => {
   return response.json();
 };
 
-const Plant = async ({ plntId }) => {
-  const plant = await getPlantDetail(plntId);
-  console.log(plant)
+const Plant = async ({ plantId }) => {
+  const plant = await getPlantDetail(plantId);
   if(!(plant)) {notFound()}
   return (
     <div className="text-gray-300 max-w-7xl mx-auto px-4 mt-10">
@@ -23,7 +22,7 @@ const Plant = async ({ plntId }) => {
           <h2 className="text-3xl font-semibold">Modify plant's data</h2>
           <div className="flex gap-5">
             <Link
-                href="/plants/add"
+                href={`/plants/${plantId}/edit`}
                 className="self-start font-semibold sm:self-auto rounded-full px-5 py-2 text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black transition cursor-pointer"
             >
                 Edit
@@ -48,9 +47,12 @@ const Plant = async ({ plntId }) => {
 
           <div className="flex flex-col gap-4 md:pl-10">
             <h1 className="text-3xl font-bold">{plant.name}</h1>
-            <p className="text-sm text-gray-400 italic">
-              {plant.scientificName}
-            </p>
+            <div className="flex flex-row gap-5 text-sm text-gray-400 italic">
+              <p>
+                {plant.scientificName}
+              </p>
+              <span>{plant.category}</span>
+            </div>
 
             <p className="mt-2">{plant.description}</p>
 
@@ -94,8 +96,7 @@ const Plant = async ({ plntId }) => {
 };
 
 export default async function PlantsDetails({ params }) {
-  // params return is a promise..
-  const { plantSlug } = await params;
+  const { plantId } = await params;
   return (
     <Suspense
       fallback={
@@ -104,7 +105,7 @@ export default async function PlantsDetails({ params }) {
         </div>
       }
     >
-      <Plant plntId={plantSlug} />
+      <Plant plantId={ plantId } />
     </Suspense>
   );
 }
